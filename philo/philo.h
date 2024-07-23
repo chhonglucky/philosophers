@@ -6,7 +6,7 @@
 /*   By: chanhhon <chanhhon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 20:49:43 by chanhhon          #+#    #+#             */
-/*   Updated: 2024/07/21 21:27:08 by chanhhon         ###   ########.fr       */
+/*   Updated: 2024/07/23 16:51:54 by chanhhon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,12 @@
 # include <stdio.h>
 # include <pthread.h>
 # include <sys/time.h>
+
+# define TAKE_FORKS "has taken a fork"
+# define THINKING "is thinking"
+# define SLEEPING "is sleeping"
+# define EATING "is eating"
+# define DIED "died"
 
 struct s_philo;
 
@@ -54,5 +60,6 @@ typedef struct s_philo
 }	t_philo;
 
 int	ft_atoi(const char *str);
+int	ft_strcmp(char *str1, char *str2);
 
 #endif
