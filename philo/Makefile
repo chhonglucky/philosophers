@@ -5,17 +5,16 @@
 #                                                     +:+ +:+         +:+      #
 #    By: chanhhon <chanhhon@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/07/18 20:45:02 by chanhhon          #+#    #+#              #
-#    Updated: 2024/07/18 20:50:47 by chanhhon         ###   ########.fr        #
+#    Created: 2024/07/24 19:23:07 by chanhhon          #+#    #+#              #
+#    Updated: 2024/07/30 19:36:33 by chanhhon         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC 		=	cc
 CFLAGS 	=	-Wall -Wextra -Werror
 NAME 	=	philo
-SRCS	=	main.c
-			
-OBJS	= $(SRCS:.c=.o)
+SRCS	=	actions.c free.c init.c macro.c main.c utils.c			
+OBJS	= 	$(SRCS:.c=.o)
 
 all : $(NAME)
 
